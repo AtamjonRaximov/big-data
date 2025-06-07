@@ -74,11 +74,11 @@
 #select Name,SurfaceArea from world.country where Continent="Asia" or Continent="Europe" and Population<50000000
 
 #4.	World database_dagi city jadvalidan mamlakat kodi NLD va ARG bo’lgan hamda aholi soni 500 000 dan yuqori bo’lmagan shaharlar nomlarini chiqaring.
-#select Name from world.city where CountryCode="NLD" and CountryCode="ARG" and Population<500000
+#select Name from world.city where CountryCode="NLD" and CountryCode="ARG" and Population<=500000
 
 #5.	World database_dagi country jadvalidan osiyo qita’sida joylashgan, aholi soni 20 000 000 dan yuqori va hukumat shakli Republic bo’lgan
 # yoki 1950 yildan keyin mustaqillikka erishgan mamlakatlarga tegishli barcha ma’lumotlarni chiqaring.
-#select * from world.country where Continent="Asia" and Population>20000000 and GovernmentForm="Republic" or IndepYear> 1950
+#select * from world.country where Continent="Asia" and Population>20000000 and (GovernmentForm="Republic" or IndepYear> 1950)
 
 
 #Between
